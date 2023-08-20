@@ -1,11 +1,10 @@
 char * finalString(char * s){
     int index=0;
-    int j;
     int len=strlen(s);
 
     for(int i=0;s[i]!='\0';i++)
         if(s[i]=='i'){
-            for( j=i;j<len;j++)
+            for(int j=i;j<len;j++)
                 s[j]=s[j+1];
             len--;
             int temp;
